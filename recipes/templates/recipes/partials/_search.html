@@ -1,0 +1,19 @@
+<div class="search-container">
+        
+    <div class="container">
+        <form method="GET" action="{% url 'recipes:search' %}" class="search-form">
+            <input type="search" class="search-input" name="q" value="{{ search_term }}"  required>
+            <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <style>
+        .search-form {
+    border: .2rem solid var(--color-primary-light);
+    max-width: 42rem;
+    margin: 0 auto;
+    border-radius: 4rem;
+    position: relative;
+    transition: all 300ms ease-in-out;
+}
+    </style>
+</div>
